@@ -5,10 +5,18 @@ export default function Pinnie() {
 
   const jsConfetti = new JSConfetti()
 
-  jsConfetti.addConfetti()
+  jsConfetti.addConfetti({
+    confettiColors: [
+      '#6e57ff', '#00cc92', '#ec78ff', '#ff9900'
+    ]
+  })
 
   function shootConfetti() {
-    jsConfetti.addConfetti()
+    jsConfetti.addConfetti({
+      confettiColors: [
+        '#6e57ff', '#00cc92', '#ec78ff', '#ff9900'
+      ]
+    })
   }
 
   return (
